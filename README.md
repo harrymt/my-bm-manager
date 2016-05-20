@@ -1,4 +1,4 @@
-# Simple Bookmark Manager
+# My Bookmark Manager
 
 - Easy
 - Simple

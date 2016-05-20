@@ -1,11 +1,12 @@
-// if you checked "fancy-settings" in extensionizr.com, uncomment this lines
 
+
+// List of settings
 // var settings = new Store("settings", {
 //     "sample_setting": "This is how you use Store.js to remember values"
 // });
 
 
-//example of using a message handler from the inject scripts
+// example of using a message handler from the inject scripts
 chrome.extension.onMessage.addListener(
   function(request, sender, sendResponse) {
   	chrome.pageAction.show(sender.tab.id);
@@ -14,7 +15,9 @@ chrome.extension.onMessage.addListener(
 
 chrome.browserAction.onClicked.addListener(
   function(activeTab) {
-    chrome.tabs.create({'url': chrome.extension.getURL('src/options_custom/index.html')}, function(tab) {
+    // Initial page
+    var startingPage = 'src/index.html';
+    chrome.tabs.create({'url': chrome.extension.getURL(startingPage)}, function(tab) {
       console.log("App opened");
     });
 });

@@ -1,0 +1,53 @@
+
+body {
+  font-size: .7em;
+}
+
+h1 {
+  font-size: 2.4em;
+}
+
+li {
+  font-size: 1.5em;
+  line-height: 1.7em;
+}
+
+#js-sortable-items li:hover {
+  cursor: pointer;
+  background: #ddd;
+}
+
+#js-sortable-items li {
+  max-width: 400px;
+  display: -webkit-box;
+  background: #eee;
+  margin-bottom: 10px;
+}
+
+#js-sortable-items img {
+  width: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#js-sortable-items a {
+  color: #555;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.sortable-ghost {
+  background: #ddd;
+}
+
+.js-tabs-current-session ul li a {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 85%;
+}
+
+.js-tabs-current-session {
+  width: 80%;
+}
